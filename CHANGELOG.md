@@ -1,6 +1,13 @@
 Change Log
 ==========
 
+Version 2.4.0.1 *(2016-04-17)*
+----------------------------
+
+ * Forked from Jake Wharton's work: https://github.com/JakeWharton/NineOldAndroids
+ * Ported to Android Studio
+
+
 Version 2.4.0 *(2012-06-24)*
 ----------------------------
 

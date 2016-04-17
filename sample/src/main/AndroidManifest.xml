@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.jakewharton.nineoldandroids.sample"
-    android:versionCode="60"
-    android:versionName="2.4.0">
-
-    <uses-sdk
-        android:minSdkVersion="1"
-        android:targetSdkVersion="14" />
+    package="com.jakewharton.nineoldandroids.sample">
 
     <application
         android:icon="@drawable/ic_launcher"
@@ -22,7 +16,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        
+
         <activity
             android:name=".Toggles"
             android:label="Toggles">
@@ -31,7 +25,7 @@
                 <category android:name="com.jakewharton.nineoldandroids.sample.SAMPLE"/>
             </intent-filter>
         </activity>
-        
+
         <activity
             android:name=".VPADemo"
             android:label="ViewPropertyAnimator Demo">

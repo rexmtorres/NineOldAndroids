@@ -1,19 +1,8 @@
-#Android generated
-bin
-gen
-
-#Eclipse
-.project
-.classpath
-.settings
-
-#IntelliJ IDEA
-.idea
 *.iml
-*.ipl
-classes
-
-#Maven
-target
-release.properties
-pom.xml.*
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
