@@ -48,6 +48,18 @@ a dependency:
 
 
 
+Android Studio / Gradle Integration
+-----------------------------------
+`Version 2.4.0.1` is exactly the same as Jake's `v2.4.0` but has been ported over to
+`Android Studio` for use with `Android Studio / Gradle projects`.
+
+Using JCenter as the repository, you can include the library by adding the line below
+into the `dependencies` section of your module's `build.gradle` file:
+
+    compile 'com.rexmtorres.android:jw-nineoldandroids:2.4.0.1'
+
+
+
 Developed By
 ============
 
