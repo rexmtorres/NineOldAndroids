@@ -1,5 +1,33 @@
 apply plugin: 'com.android.library'
 
+def libVersion = "2.4.0.1"
+
+// How to upload to jcenter: http://inthecheesefactory.com/blog/how-to-upload-library-to-jcenter-maven-central-as-dependency/en
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'jw-nineoldandroids'
+
+    publishedGroupId = 'com.rexmtorres.android'
+    libraryName = 'jw-nineoldandroids'
+    artifact = 'jw-nineoldandroids'
+
+    libraryDescription = 'Forked from Jake Wharton\'s NineOldAndroids:\nAndroid library for using the Honeycomb (Android 3.0) animation API on all versions of the platform back to 1.0!\n\nI take no credit for Jake\'s work.  I am simply uploading this for use with Android Studio / Gradle on JCenter since he is no longer maintaining the library.'
+
+    siteUrl = 'https://github.com/rexmtorres/NineOldAndroids'
+    gitUrl = 'https://github.com/rexmtorres/NineOldAndroids.git'
+
+    libraryVersion = libVersion
+
+    developerId = 'rexmtorres'
+    developerName = 'Rex Mag-uyon Torres'
+    developerEmail = 'rexmtorres@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
@@ -8,7 +36,7 @@ android {
         minSdkVersion 1
         targetSdkVersion 23
         versionCode 60
-        versionName "2.4.0"
+        versionName libVersion
     }
     buildTypes {
         release {
@@ -21,3 +49,6 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
+
+apply from: 'https://raw.githubusercontent.com/rexmtorres/pattern-lock/master/nuuneoi-scripts/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/rexmtorres/pattern-lock/master/nuuneoi-scripts/bintrayv1.gradle'
